@@ -1,0 +1,209 @@
+body{
+    font-family: 'arial';
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+nav a{
+  color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .navbar-logo,.navbar-middle,.navbar-login,.navbar-logut{
+    cursor: pointer;
+  }
+
+  .navbar-logo {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .navbar-login {
+    flex: 1;
+    text-align: right;
+    margin-right: 4vw;
+  }
+
+  .navbar-logut {
+    flex: 1;
+    text-align: right;
+    margin-right: 4vw;
+    display: none;
+  }
+
+  .navbar-middle {
+    font-size: 1.5rem;
+    flex: 2;
+    text-align: center;
+  }
+
+  /*
+  profile
+  */
+
+  #UserSitatWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    margin-top: 15vh;
+  }
+
+  #UserSitatWrapper2 {
+    max-width: 30vw;
+  }
+
+  #securityWrapper {
+    display: none;
+  }
+
+  #errorP {
+    background: white;
+    border: 3px solid red;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 5px;
+    display: none;
+  }
+
+  #newSitat {
+    margin-top: 30vh;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #newSitat input {
+    width: 90%;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: solid 2px black;
+    border-radius: 4px;
+  }
+
+  #newSitatWrapper {
+    border: 2px solid black;
+    padding: 4rem 10rem;
+    border-radius: 4px;
+    background: #333
+  }
+
+  #newSitatBTN {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  #newSitatBTN:hover {
+    color: white;
+    background-color: black;
+  }
+
+  #footerSpace {
+    height: 20vh;
+  }
+
+  #sitatWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #sitatWrapper2 {
+    max-width: 30vw;
+  }
+
+  #sitat {
+    font-style: italic;
+  }
+
+  #forfatter {
+    float: right;
+    font-size: 1.5rem;
+  }
+
+  #username {
+    margin-top: 120px;
+    text-align: center;
+  }
+
+  #signup {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #signup-form {
+    border-radius: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+  }
+
+  #signup-error {
+    color: #fff;
+    background: red;
+    padding: 5px 10px;
+    display: none;
+  }
+
+  #signup-btn {
+    background: #fff;
+    border: solid 4px #333;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  #loginBTN {
+    cursor: pointer;
+  }
+
+  input {
+    border: solid 4px #333;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    width: 150px;
+  }
