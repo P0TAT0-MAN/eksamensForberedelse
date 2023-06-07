@@ -190,15 +190,17 @@ nav a{
     display: none;
   }
 
-  #signup-btn {
+  #signup-btn, #login-btn {
     background: #fff;
     border: solid 4px #333;
     padding: 4px;
+    border-radius: 4px;
     cursor: pointer;
   }
 
-  #loginBTN {
-    cursor: pointer;
+  #signup-btn:hover, #login-btn:hover {
+    color: #fff;
+    background: black;
   }
 
   input {
@@ -206,4 +208,29 @@ nav a{
     margin-top: 7px;
     margin-bottom: 4px;
     width: 150px;
+    border-radius: 4px;
+    padding: 4px;
+  }
+
+  #listWrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  #brukersSitatliste {}
+
+  .brukerSitat {
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+
+  .brukerSitat p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
   }

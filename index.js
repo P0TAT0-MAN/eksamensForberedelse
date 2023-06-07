@@ -32,6 +32,7 @@ async function updateSitater () {
         querySnapshot.forEach((doc) => {
                 sitater.push(doc._document.data.value.mapValue.fields)
             })
+            randomSitat()
 }
 
 
@@ -49,7 +50,7 @@ function randomSitat () {
     HTMLforfatter.innerHTML = randomSitat.forfatter.stringValue
 }
 
-setTimeout(randomSitat, 2000)
+
 
 // innlogget sideoverskrift
 const middleTXT = document.getElementById('middleTXT')
@@ -83,7 +84,7 @@ logoutBTN.addEventListener('click',logout)
 
 // laster animasjon index.html
 
-loadAnimation()
+//loadAnimation()
 
 
 

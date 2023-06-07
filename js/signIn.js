@@ -26,16 +26,26 @@ const db = getFirestore(app)
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const loginBTN = document.getElementById('loginBTN');
+const errorMSG = document.getElementById('errorP');
 
 const loginEmailPassword = async () => {
     // legg til email login field i chinpokomon link til inputs i disse variabler
+    if(emailInput.value.length > 0 && passwordInput.value.length > 0){
     const loginEmail = emailInput.value;
     const loginPassword = passwordInput.value;
+
+    try {
     const userCredentials = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
     console.log(userCredentials.user);
     console.log(getAuth().currentUser);
     window.open('./userpage.html','_blank')
     window.open('../index.html','_self')
+  } catch(error){
+    errorMSG.style.display='block';
+  }
+  } else {
+    errorMSG.style.display='block';
+  }
 }
 
 loginBTN.addEventListener('click', loginEmailPassword)
